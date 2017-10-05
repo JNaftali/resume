@@ -45,7 +45,7 @@ function App() {
           <ContactEntry>Telephone 732-425-7681</ContactEntry>
           <ContactEntry>Email marantzj@gmail.com</ContactEntry>
           <ContactEntry>Github github.com/JNaftali</ContactEntry>
-          <ContactEntry>LinkedIn linkedin.com/joshmarantz</ContactEntry>
+          <ContactEntry>LinkedIn linkedin.com/in/joshmarantz</ContactEntry>
         </ContactInfoList>
         <SectionHeader>Profile</SectionHeader>
         <div>
