@@ -9,7 +9,12 @@ import SkillCounter from './SkillCounter';
 import Entry from './Entry';
 import EntryList from './EntryList';
 import EntryBullet from './EntryBullet';
-import { marginPageTop, marginPageLeft, marginPageRight } from './style';
+import {
+  marginPageTop,
+  marginPageLeft,
+  marginPageRight,
+  centerColumnMargin,
+} from './style';
 
 const mainStyle = {
   backgroundColor,
@@ -20,7 +25,15 @@ const mainStyle = {
   display: 'flex',
 };
 
-const leftStyle = { width: '40vw', borderRight: '1px solid rgb(59,59,59)' };
+const leftStyle = {
+  width: '40vw',
+  borderRight: '1px solid rgb(59,59,59)',
+  paddingRight: centerColumnMargin,
+};
+
+const rightStyle = {
+  paddingLeft: centerColumnMargin,
+};
 
 function App() {
   return (
@@ -56,7 +69,7 @@ function App() {
         <SkillCounter number={3}>Lua</SkillCounter>
         <SkillCounter number={3}>UNIX Scripting</SkillCounter>
       </div>
-      <div className="right">
+      <div className="right" style={rightStyle}>
         <SectionHeader>Experience</SectionHeader>
         <Entry>
           Junior Frontend Developer at Sesame Workshop - 2017

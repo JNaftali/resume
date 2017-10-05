@@ -1,9 +1,27 @@
-import React from 'react'
+import React from 'react';
 
-export default function ContactEntry({children: text}) {
-  const words = text.split(' ')
+const mainStyle = {
+  fontSize: '0.7em',
+  display: 'flex',
+  marginBottom: '0.5em',
+};
+
+const leftStyle = {
+  flex: 1,
+  maxWidth: '30%',
+};
+
+export default function ContactEntry({ children: text }) {
+  const words = text.split(' ');
 
   return (
-    <div><span>{words.shift()}</span><span>{words.join(' ')}</span></div>
-  )
+    <div style={mainStyle}>
+      <span style={leftStyle}>
+        {words.shift()}
+      </span>
+      <span>
+        {words.join(' ')}
+      </span>
+    </div>
+  );
 }
